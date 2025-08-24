@@ -1,0 +1,40 @@
+# Build artifacts
+builds/
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.a
+*.so
+*.dll
+*.dylib
+
+# Debug / profiling
+*.gch
+*.pch
+*.gcda
+*.gcno
+*.gcov
+*.prof
+*.stackdump
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*~
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+/bin/
+/obj/
+/dist/
