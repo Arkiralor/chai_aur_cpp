@@ -3,10 +3,10 @@
 # Build script with keyword arguments and support for multiple source files
 # Used when we need to compile an entire package of source files.
 
-'''
-usage:
-    bash scripts/build_v2.bash --program=<name of the executable you want> --src-dir=src/<name_of_the_directory_where_the_source_files_are_kept>
-'''
+
+# usage:
+#     bash scripts/build_v2.bash --program=<name of the executable you want> --src-dir=src/<name_of_the_directory_where_the_source_files_are_kept>
+
 
 set -e
 
