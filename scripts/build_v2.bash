@@ -62,5 +62,5 @@ echo "Build dir    : $BUILD_DIR"
 
 echo "Compiling SRC files..."
 echo "Compiling $SRC_DIR..."
-g++ -Wall -Wextra -O2 -o "$OUT_FILE" $(find $SRC_DIR -name "*.cpp")
+g++ -std=c++20 -Wall -Wextra -O2 -o "$OUT_FILE" $(find $SRC_DIR -name "*.cpp")
 echo "Build complete: $OUT_FILE"
