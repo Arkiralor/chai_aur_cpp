@@ -5,7 +5,7 @@
 
 class StringHolder {
     private:
-        static constexpr size_t maxSize = 26; // last char reserved for null terminator; max string length is 25
+        static constexpr size_t maxSize = 26; // last char reserved for null terminator (\0); max string length is 25
         char data[maxSize];
 
     public:

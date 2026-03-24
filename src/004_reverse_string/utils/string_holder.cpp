@@ -17,6 +17,18 @@ void StringHolder::reverse() {
     int middleIndex = (this->maxSize - 1) / 2;
     int leftPointer = 0;
     int rightPointer = this->maxSize - 2; // last char before null terminator
+    /* 
+    prithoo: So this is how arrays store data in continuous memeory:
+    
+    | index | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+    | data  | a | b | c | d | e | f |\0 |
+
+    leftPointer starts at index 0 (pointing to 'a') and rightPointer starts at index 5 (pointing to 'f').
+    They swap 'a' and 'f', then leftPointer moves to index 1 (pointing to 'b') and rightPointer moves to index 4 (pointing to 'e').
+    They swap 'b' and 'e', then leftPointer moves to index 2 (pointing to 'c') and rightPointer moves to index 3 (pointing to 'd').
+    They swap 'c' and 'd', then leftPointer moves to index 3 and rightPointer moves to index 2, at which point leftPointer >= middleIndex,
+    so the loop breaks and the string is fully reversed to "fedcba".
+    */
     char temp;
     while (leftPointer < rightPointer) {
         if (leftPointer >= middleIndex) {
