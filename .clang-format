@@ -1,0 +1,40 @@
+---
+BasedOnStyle: Google
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ColumnLimit: 120
+
+# Braces
+BreakBeforeBraces: Attach
+
+# Alignment
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignTrailingComments: true
+
+# Spacing
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesInAngles: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+
+# Includes
+SortIncludes: CaseSensitive
+IncludeBlocks: Regroup
+
+# Pointer/reference alignment
+PointerAlignment: Left
+
+# Access modifiers
+AccessModifierOffset: -4
+
+# Constructor initializers
+BreakConstructorInitializers: BeforeColon
+ConstructorInitializerIndentWidth: 4
+
+# Long lines
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false

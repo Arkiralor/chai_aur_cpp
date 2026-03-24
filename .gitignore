@@ -40,3 +40,6 @@ cmake_install.cmake
 /dist/
 
 .env
+
+profiles/*
+CLAUDE.md
